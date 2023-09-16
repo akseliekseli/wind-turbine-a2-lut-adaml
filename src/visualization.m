@@ -13,6 +13,8 @@ WT39 = readmatrix("data/data.xlsx",'Sheet','No.39WT');
 % Dropping the last column from the WT2, because it is an extra quality
 % variable and is not found from the remaining datasets.
 
+% Dropping the last column of WT2
+WT2(:,end) = [];
 
 % Normalized datas:
 norm_WT2 = zscore(WT2)
