@@ -28,3 +28,7 @@ title('Faulty turbine (W14)')
 figure
 boxplot(norm_WT39)
 title('Faulty turbine (WT39)')
+
+% Time series plots:
+figure
+plot(norm_WT2)
