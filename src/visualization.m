@@ -1,7 +1,7 @@
-function [outputArg1,outputArg2] = visualization(inputArg1,inputArg2)
-%VISUALIZATION Summary of this function goes here
-%   Detailed explanation goes here
-outputArg1 = inputArg1;
-outputArg2 = inputArg2;
-end
+%% Visualization for the data:
+opts = detectImportOptions('data\data.xlsx');
+WT2 = readmatrix("data\data.xlsx",'Sheet','No.2WT');
+WT3 = readmatrix("data\data.xlsx",'Sheet','No.3');
+WT14 = readmatrix("data\data.xlsx",'Sheet','No.14WT');
+WT39 = readmatrix("data\data.xlsx",'Sheet','No.39WT');
 
