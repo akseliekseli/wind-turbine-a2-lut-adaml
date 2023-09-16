@@ -28,3 +28,5 @@ title('Faulty turbine (W14)')
 figure
 boxplot(norm_WT39)
 title('Faulty turbine (WT39)')
+
+%% TEst
