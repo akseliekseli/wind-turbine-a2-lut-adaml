@@ -31,9 +31,35 @@ figure
 boxplot(norm_WT39)
 title('Faulty turbine (WT39)')
 
+%% Missing values
+clc
+missing_2 = sum(isnan(WT2))
+missing_14 = sum(isnan(WT14))
+missing_39 = sum(isnan(WT39))
+
+
+%% Data summary
+
+mean_2 = mean(WT2);
+mean_14 = mean(WT2);
+mean_39 = mean(WT2);
+
+min_2 = min(WT2);
+min_14 = min(WT14);
+min_39 = min(WT39);
+
+max_2 = max(WT2);
+max_14 = max(WT14);
+max_39 = max(WT39);
+
+
 %%
 % Time series plots:
 plotdata(norm_WT2,norm_WT14,norm_WT39,1)
+
+plotdata(norm_WT2,norm_WT14,norm_WT39,2)
+
+plotdata(norm_WT2,norm_WT14,norm_WT39,3)
 
 %% Pretreatment
 
