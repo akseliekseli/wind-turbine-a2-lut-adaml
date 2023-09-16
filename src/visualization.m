@@ -5,7 +5,6 @@ WT3 = readmatrix("data/data.xlsx",'Sheet','No.3');
 WT14 = readmatrix("data/data.xlsx",'Sheet','No.14WT');
 WT39 = readmatrix("data/data.xlsx",'Sheet','No.39WT');
 
-
 %% 
 % WT3 data seems to not be in any consistent order compared to other
 % datasets, and also has extra columns compared to them, so we are not
@@ -29,4 +28,4 @@ figure
 boxplot(norm_WT39)
 title('Faulty turbine (WT39)')
 
-%% TEst
+%% Missing values
