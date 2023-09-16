@@ -29,6 +29,18 @@ figure
 boxplot(norm_WT39)
 title('Faulty turbine (WT39)')
 
+%%
 % Time series plots:
-figure
-plot(norm_WT2)
+plotdata(norm_WT2,norm_WT14,norm_WT39,1)
+
+%% Pretreatment
+
+function [H] = plotdata(WT2,WT14,WT39,column)
+    figure
+    hold on
+    plot(WT2(:,column),'g-')
+    plot(WT14(:,column),'r--')
+    plot(WT39(:,column),'b--')
+    title('Time series for feature ',column)
+    legend('WT2','WT14','WT39')
+end
