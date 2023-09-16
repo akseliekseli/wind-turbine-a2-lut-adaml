@@ -1,5 +1,5 @@
 %% Visualization for the data:
-opts = detectImportOptions('data\data.xlsx');
+addpath('data\')
 WT2 = readmatrix("data\data.xlsx",'Sheet','No.2WT');
 WT3 = readmatrix("data\data.xlsx",'Sheet','No.3');
 WT14 = readmatrix("data\data.xlsx",'Sheet','No.14WT');
