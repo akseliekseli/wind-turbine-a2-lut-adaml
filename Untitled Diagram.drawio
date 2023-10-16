@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-16T18:57:59.851Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0" etag="oorKQe4nt5QS-mSxM28i" version="22.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-16T18:59:01.607Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0" etag="C6CI6FxIM7_fhPlWUKR6" version="22.0.4" type="github">
   <diagram name="Page-1" id="frlsa_pneO61_Gw_KAdB">
     <mxGraphModel dx="2058" dy="1142" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -23,72 +23,6 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="350" y="480" as="sourcePoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-32" value="Choosing the sensors" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="480" y="1730" width="180" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-33" value="- Calculate separate PCA for all turbines" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="ozctogzyn5P9TWFzlbEa-32" vertex="1">
-          <mxGeometry y="30" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-34" value="&lt;div&gt;- Compare which sensors have the most different loadings&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Choose 2 sensors for y&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="ozctogzyn5P9TWFzlbEa-32" vertex="1">
-          <mxGeometry y="60" width="180" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ozctogzyn5P9TWFzlbEa-37" target="ozctogzyn5P9TWFzlbEa-53" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-37" value="PLS model for Sensor 1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="210" y="1900" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ozctogzyn5P9TWFzlbEa-38" target="ozctogzyn5P9TWFzlbEa-51" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-38" value="PLS model for Sensor 2" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="380" y="1900" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ozctogzyn5P9TWFzlbEa-41" target="ozctogzyn5P9TWFzlbEa-37" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ozctogzyn5P9TWFzlbEa-41" target="ozctogzyn5P9TWFzlbEa-38" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-41" value="Calibration set" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="290" y="1795" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ozctogzyn5P9TWFzlbEa-43" target="ozctogzyn5P9TWFzlbEa-50" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-43" value="Validation set" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="730" y="1795" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ozctogzyn5P9TWFzlbEa-34" target="ozctogzyn5P9TWFzlbEa-43" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ozctogzyn5P9TWFzlbEa-34" target="ozctogzyn5P9TWFzlbEa-41" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.46;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ozctogzyn5P9TWFzlbEa-50" target="ozctogzyn5P9TWFzlbEa-57" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-50" value="Test healthy prediction" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="490" y="1980" width="140" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-51" value="- Test PLS models for healthy data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="ozctogzyn5P9TWFzlbEa-50" vertex="1">
-          <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-53" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="ozctogzyn5P9TWFzlbEa-50" vertex="1">
-          <mxGeometry y="60" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-57" value="Test with faulty turbine" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="490" y="2100" width="150" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-58" value="- Center and scale faulty turbine with healthys mean and std" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="ozctogzyn5P9TWFzlbEa-57" vertex="1">
-          <mxGeometry y="30" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-59" value="- Use the PLS models " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="ozctogzyn5P9TWFzlbEa-57" vertex="1">
-          <mxGeometry y="90" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ozctogzyn5P9TWFzlbEa-60" value="Check regression performance if there is fault" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="ozctogzyn5P9TWFzlbEa-57" vertex="1">
-          <mxGeometry y="120" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ZODMK0UDfP6Zf_iu29Jf-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZODMK0UDfP6Zf_iu29Jf-1" target="ZODMK0UDfP6Zf_iu29Jf-10">
           <mxGeometry relative="1" as="geometry" />
