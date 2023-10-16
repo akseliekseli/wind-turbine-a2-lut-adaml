@@ -7,10 +7,10 @@ WT39 = readmatrix("data/data.xlsx",'Sheet','No.39WT');
 
 %% Variable distributions
 % Normalizing data:
-norm_WT2 = zscore(WT2);
-norm_WT3 = zscore(WT3);
-norm_WT14 = zscore(WT14);
-norm_WT39 = zscore(WT39);
+norm_WT2 = zscore(WT2(2:end,:));
+norm_WT3 = zscore(WT3(2:end,:));
+norm_WT14 = zscore(WT14(2:end,:));
+norm_WT39 = zscore(WT39(2:end,:));
 
 % Data distributions as box plots:
 boxplot(norm_WT2), grid on
@@ -55,13 +55,14 @@ plot(norm_WT2)
 % Time series plots:
 % ivals = [3:8,10:11, 15:22,24:25];
 ivals = [3,5,7,10,16,17,19,20,21,22,24,25];
-ivals = 1:2
+ivals = 19:27
 for i = 1:length(ivals)
-    subplot(1,2,i)
+    subplot(3,3,i)
 %     figure
     plotdata(norm_WT2,norm_WT14,norm_WT39,ivals(i))
 end
-
+legend('WT2','WT14','WT39','Location','southeast')
+sgtitle('Data distribtion for features 19-27')
 
 %% 
 % WT3 data seems to not be in any consistent order compared to other
@@ -78,6 +79,5 @@ function [H] = plotdata(WT2,WT14,WT39,column)
     plot(WT14(:,column),'r--')
     plot(WT39(:,column),'b--')
     title('Feature ',column)
-    legend('WT2','WT14','WT39')
     grid on
 end
